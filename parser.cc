@@ -120,7 +120,7 @@ public:
   }
 
 private:
-  rapidjson::PrettyWriter<rapidjson::StringBuffer> &writer_;
+  rapidjson::Writer<rapidjson::StringBuffer> &writer_;
 };
 
 //--------------------------------------------------------------------------------------------------

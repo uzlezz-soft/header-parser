@@ -4,8 +4,7 @@ project "header-parser"
 
     includedirs
     {
-        includes["rapidjson"],
-        includes["tclap"]
+        includes["rapidjson"]
     }
 
     files

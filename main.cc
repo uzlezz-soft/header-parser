@@ -44,6 +44,12 @@ int main(int argc, char** argv)
     std::cerr << "error: " << e.error() << " for arg " << e.argId() << std::endl;
     return -1;
   }*/
+  inputFile = argv[1];
+  options.classNameMacro = "MCLASS";
+  options.enumNameMacro = "MENUM";
+  options.functionNameMacro = "MFUNC";
+  options.propertyNameMacro = "MPROP";
+  options.customMacros = "";
 
   // Open from file
   std::ifstream t(inputFile);

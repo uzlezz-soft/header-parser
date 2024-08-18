@@ -1,7 +1,7 @@
 #include "parser.h"
 #include "handler.h"
 #include "options.h"
-#include <tclap/CmdLine.h>
+//#include <tclap/CmdLine.h>
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -17,7 +17,7 @@ int main(int argc, char** argv)
 {
   Options options;
   std::string inputFile;
-  try
+  /*try
   {
     using namespace TCLAP;
 
@@ -43,7 +43,7 @@ int main(int argc, char** argv)
   {
     std::cerr << "error: " << e.error() << " for arg " << e.argId() << std::endl;
     return -1;
-  }  
+  }*/
 
   // Open from file
   std::ifstream t(inputFile);

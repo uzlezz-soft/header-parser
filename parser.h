@@ -77,7 +77,7 @@ protected:
 private:
   Options options_;
   rapidjson::StringBuffer buffer_;
-  rapidjson::PrettyWriter<rapidjson::StringBuffer> writer_;
+  rapidjson::Writer<rapidjson::StringBuffer> writer_;
 
   struct Scope
   {

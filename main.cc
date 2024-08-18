@@ -47,9 +47,9 @@ int main(int argc, char** argv)
   inputFile = argv[1];
   options.classNameMacro = "MCLASS";
   options.enumNameMacro = "MENUM";
-  options.functionNameMacro = "MFUNC";
+  options.functionNameMacro = {"MFUNC"};
   options.propertyNameMacro = "MPROP";
-  options.customMacros = "";
+  options.customMacros = {};
 
   // Open from file
   std::ifstream t(inputFile);

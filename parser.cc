@@ -11,7 +11,7 @@
 class TypeNodeWriter : public TypeNodeVisitor
 {
 public:
-  TypeNodeWriter(rapidjson::PrettyWriter<rapidjson::StringBuffer>& writer) :
+  TypeNodeWriter(rapidjson::Writer<rapidjson::StringBuffer>& writer) :
     writer_(writer) {}
 
   //-------------------------------------------------------------------------------------------------

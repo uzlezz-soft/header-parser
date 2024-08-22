@@ -557,6 +557,8 @@ bool Parser::ParseClass(Token &token)
   if(!GetIdentifier(classNameToken))
     throw; // Missing class name
 
+  if (GetIdentifier(classNameToken)); // parsed api macro previously
+
   writer_.String("name");
   writer_.String(classNameToken.token.c_str());
 

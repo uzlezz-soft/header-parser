@@ -44,12 +44,13 @@ int main(int argc, char** argv)
     std::cerr << "error: " << e.error() << " for arg " << e.argId() << std::endl;
     return -1;
   }*/
-  inputFile = argv[1];
+  auto project_api_macro = argv[1];
+  inputFile = argv[2];
   options.classNameMacro = "MCLASS";
   options.enumNameMacro = "MENUM";
   options.functionNameMacro = {"MFUNC"};
   options.propertyNameMacro = "MPROP";
-  options.customMacros = {};
+  options.customMacros = { std::string(project_api_macro), std::string("NO_API") };
 
   // Open from file
   std::ifstream t(inputFile);

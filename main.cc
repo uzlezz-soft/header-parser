@@ -50,7 +50,7 @@ int main(int argc, char** argv)
   options.enumNameMacro = "MENUM";
   options.functionNameMacro = {"MFUNC"};
   options.propertyNameMacro = "MPROP";
-  options.customMacros = { std::string(project_api_macro), std::string("NO_API") };
+  options.customMacros = { std::string(project_api_macro), std::string("NO_API"), std::string("ML_META") };
 
   // Open from file
   std::ifstream t(inputFile);
